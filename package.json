@@ -8,10 +8,26 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "build": "babel client --out-dir public --presets=env --source-maps inline --watch"
   },
   "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "redis": "^2.8.0"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "babel": "^6.23.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "jest": "^23.6.0",
+    "jest-enzyme": "^7.0.1",
+    "nodemon": "^1.18.9",
+    "sass": "^1.15.2",
+    "webpack": "^4.27.1"
   }
 }
